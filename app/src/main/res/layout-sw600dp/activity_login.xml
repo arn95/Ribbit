@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#ff006593">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:id="@+id/login_mountains"
+        android:src="@mipmap/login_mountains"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/login_stars"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/login_stars"
+        android:src="@mipmap/login_stars"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/login_logo"
+        android:src="@mipmap/login_logo"
+        android:visibility="visible"
+        android:layout_above="@+id/login_mountains"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp" />
+
+    <com.ribbit.android.CustomClasses.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/login_username"
+        android:visibility="invisible"
+        android:singleLine="true"
+        android:background="#aa0ebaa0"
+        android:hint="username"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_below="@+id/login_mountains"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp" />
+
+    <com.ribbit.android.CustomClasses.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/login_password"
+        android:visibility="invisible"
+        android:singleLine="true"
+        android:background="#aa0ebaa0"
+        android:gravity="center"
+        android:hint="password"
+        android:textSize="30sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/login_username"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/login_register"
+        android:background="@color/transparent"
+        android:textColor="#CEEFEF"
+        android:textStyle="normal"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/login_sign_in"
+        android:textColor="#CEEFEF"
+        android:textSize="20sp"
+        android:background="@color/transparent"
+        android:textStyle="bold"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

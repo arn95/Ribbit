@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ribbit.android.Activities.CameraActivity"
+    android:id="@+id/camera_preview"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/camera_preview_picture"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true" />
+
+    <com.ribbit.android.CustomClasses.AnimatedCameraPreviewButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/camera_flash_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        android:background="@color/transparent" />
+
+    <com.ribbit.android.CustomClasses.AnimatedCameraPreviewButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/camera_close_preview_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ic_close_white_36dp"
+        android:layout_margin="20dp"
+        android:visibility="invisible" />
+
+    <com.ribbit.android.CustomClasses.AnimatedCameraPreviewButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/camera_change_camera_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_switch_camera_white_36dp"
+        android:visibility="invisible"
+        android:layout_margin="20dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/camera_footer_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/transparent">
+
+        <com.ribbit.android.CustomClasses.AnimatedCameraFooterButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/camera_capture_button"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_panorama_fish_eye_white_48dp"
+            android:visibility="visible" />
+
+        <com.ribbit.android.CustomClasses.AnimatedCameraFooterButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/camera_done_button"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_done_white_48dp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <com.ribbit.android.CustomClasses.FlashScreenImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/camera_front_flash"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:background="#c8ffffff"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

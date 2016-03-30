@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ribbit.android.Activities.RegisterActivity"
+    android:background="@color/GhostWhite"
+    android:id="@+id/register_relative_layout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_mountains"
+        android:src="@mipmap/login_just_mountains"
+        android:scaleType="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_sun"
+        android:scaleType="fitCenter"
+        android:layout_alignLeft="@+id/register_mountains"
+        android:layout_alignStart="@+id/register_mountains"
+        android:src="@mipmap/ribbit_sun"
+        android:layout_above="@+id/register_button_done" />
+
+    <com.ribbit.android.CustomClasses.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/register_username"
+        android:hint="username"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#c3ffffff"
+        android:textSize="25sp"
+        android:layout_above="@+id/register_mountains"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <com.ribbit.android.CustomClasses.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/register_email"
+        android:layout_below="@+id/register_username"
+        android:layout_centerHorizontal="true"
+        android:hint="e-mail"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#c3ffffff"
+        android:textSize="25sp" />
+
+    <com.ribbit.android.CustomClasses.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/register_password"
+        android:layout_below="@+id/register_email"
+        android:layout_centerHorizontal="true"
+        android:hint="password"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#c3ffffff"
+        android:textSize="25sp" />
+
+    <com.ribbit.android.CustomClasses.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/register_password_again"
+        android:layout_below="@+id/register_password"
+        android:layout_centerHorizontal="true"
+        android:hint="re-enter password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#c3ffffff"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/register_button_done"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#c3ffffff"
+        android:visibility="invisible" />
+
+</RelativeLayout>
